@@ -1,12 +1,19 @@
-function ResearchPage() {
+import { useEffect } from "react";
+import {StyledIntro, StyledMainContent} from "../layout/main-layout.styles";
+
+export default function ResearchPage() {
+  useEffect(() => {
+    document.title = "Research | Resume";
+  }, []);
+
   return (
     <>
-      <section className="intro">
+      <StyledIntro>
         <h1>Research</h1>
         <p>Pinn&apos;s research interests and skills.</p>
-      </section>
+      </StyledIntro>
 
-      <section className="main-content">
+      <StyledMainContent>
         <h2>Research Interests</h2>
         <p>
           I am interested in digital and emerging media, especially how new technologies shape
@@ -39,9 +46,8 @@ function ResearchPage() {
           I work with inferential statistics, regression, and frequency analysis, and emphasize
           validity, reliability, reproducible workflows, and clear reporting with tables and graphs.
         </p>
-      </section>
+      </StyledMainContent>
     </>
   );
 }
 
-export default ResearchPage;

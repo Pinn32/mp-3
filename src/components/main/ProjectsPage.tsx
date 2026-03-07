@@ -1,14 +1,20 @@
-import Calculator from "../components/calculator/Calculator";
+import { useEffect } from "react";
+import Calculator from "../calculator/Calculator";
+import {StyledIntro, StyledMainContent} from "../layout/main-layout.styles";
 
-function ProjectsPage() {
+export default function ProjectsPage() {
+  useEffect(() => {
+    document.title = "Projects | Resume";
+  }, []);
+
   return (
     <>
-      <section className="intro">
+      <StyledIntro>
         <h1>Projects</h1>
         <p>Current projects and previous projects archive.</p>
-      </section>
+      </StyledIntro>
 
-      <section className="main-content">
+      <StyledMainContent>
         <Calculator />
 
         <section>
@@ -91,9 +97,7 @@ function ProjectsPage() {
             </li>
           </ul>
         </section>
-      </section>
+      </StyledMainContent>
     </>
   );
 }
-
-export default ProjectsPage;

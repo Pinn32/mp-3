@@ -1,15 +1,21 @@
-import portraitImage from "../img/pinn32.png";
+import { useEffect } from "react";
+import portraitImage from "../../../public/pinn32.png";
+import { StyledIntro, StyledMainContent } from "../layout/main-layout.styles";
 
-function HomePage() {
+export default function HomePage() {
+  useEffect(() => {
+    document.title = "Home | Resume";
+  }, []);
+
   return (
     <>
-      <section className="intro">
-        <img id="portrait" src={portraitImage} alt="Pinn's portrait" title="Pinn's Portrait" />
+      <StyledIntro>
+        <img src={portraitImage} alt="Pinn's portrait" title="Pinn's Portrait" />
         <h1>Pinn Xu</h1>
         <p>Master&apos;s Student at EMS Boston University</p>
-      </section>
+      </StyledIntro>
 
-      <section className="main-content">
+      <StyledMainContent>
         <h2>About Me</h2>
         <p>
           A master&apos;s student in{" "}
@@ -45,9 +51,8 @@ function HomePage() {
           <li>Qualitative and Quantitative Research Methods</li>
           <li>Data Analysis with SPSS and Python</li>
         </ul>
-      </section>
+      </StyledMainContent>
     </>
   );
 }
 
-export default HomePage;

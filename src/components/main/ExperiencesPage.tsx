@@ -1,15 +1,22 @@
-function ExperiencesPage() {
+import { useEffect } from "react";
+import {StyledIntro, StyledMainContent} from "../layout/main-layout.styles";
+
+export default function ExperiencesPage() {
+  useEffect(() => {
+    document.title = "Experiences | Resume";
+  }, []);
+
   return (
     <>
-      <section className="intro">
+      <StyledIntro>
         <h1>Experiences</h1>
         <p>Pinn&apos;s experiences of working for companies or organizations.</p>
-      </section>
+      </StyledIntro>
 
-      <section className="main-content">
+      <StyledMainContent>
         <h2>Teaching Assistant</h2>
         <h3>Global Education &amp; Technology</h3>
-        <p>June 2023-September 2023</p>
+        <p>June 2023 – September 2023</p>
         <ul>
           <li>Responded to student questions on English learning and exam preparation.</li>
           <li>Collected and reported student feedback to teachers for targeted support.</li>
@@ -21,7 +28,7 @@ function ExperiencesPage() {
 
         <h2>Digital Marketing Intern</h2>
         <h3>Anjiajie Automotive Technology</h3>
-        <p>June 2022-September 2022</p>
+        <p>June 2022 – September 2022</p>
         <ul>
           <li>Handled customer inquiries via online Q&amp;A and provided service information.</li>
           <li>Collected and categorized questions for the follow-up team.</li>
@@ -32,7 +39,7 @@ function ExperiencesPage() {
 
         <h2>Publicity Department Manager</h2>
         <h3>Japanese Club of XJTLU</h3>
-        <p>October 2021-May 2023</p>
+        <p>October 2021 – May 2023</p>
         <ul>
           <li>Managed the club&apos;s official WeChat account and produced weekly posts.</li>
           <li>Created 10+ event posts, attracting 60+ participants on average.</li>
@@ -40,9 +47,8 @@ function ExperiencesPage() {
           <li>Collected and analyzed feedback, increasing satisfaction ratings by 20%.</li>
           <li>Led a team of 5 with clear task assignment and deadline management.</li>
         </ul>
-      </section>
+      </StyledMainContent>
     </>
   );
 }
 
-export default ExperiencesPage;

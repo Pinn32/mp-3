@@ -1,12 +1,19 @@
-function EducationPage() {
+import { useEffect } from "react";
+import {StyledIntro, StyledMainContent} from "../layout/main-layout.styles";
+
+export default function EducationPage() {
+  useEffect(() => {
+    document.title = "Education | Resume";
+  }, []);
+
   return (
     <>
-      <section className="intro">
+      <StyledIntro>
         <h1>Education</h1>
         <p>Pinn&apos;s educational background.</p>
-      </section>
+      </StyledIntro>
 
-      <section className="main-content">
+      <StyledMainContent>
         <h2>MA Emerging Media Studies (in progress)</h2>
         <p>Boston University, MA Boston, USA</p>
         <p>
@@ -32,9 +39,8 @@ function EducationPage() {
           and communication tracks, including journalism, public relations, digital media, and film
           studies, creating a distinctive academic profile.
         </p>
-      </section>
+      </StyledMainContent>
     </>
   );
 }
 
-export default EducationPage;
