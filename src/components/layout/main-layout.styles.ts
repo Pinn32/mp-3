@@ -40,4 +40,67 @@ export const StyledIntro = styled.section`
 export const StyledMainContent = styled.section`
   text-align: left;
   margin: 1%;
+
+  h2 {
+    text-align: left;
+    padding: 2% 0 0 0;
+    font-size: calc(16px + 1vw);
+  }
+
+  h3 {
+    text-align: left;
+    padding: 3% 0 0 0;
+    font-size: calc(12px + 1vw);
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: calc(2px + 0.5vw);
+    font-size: calc(10px + 0.5vw);
+    padding-top: 2%;
+    padding-bottom: 3%;
+  }
+
+  p {
+    padding: 2% 0;
+    font-size: calc(10px + 0.5vw);
+  }
+
+  a {
+    &:link {
+      color: darkgreen;
+      text-decoration: none;
+    }
+
+    &:visited {
+      color: cadetblue;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @media (max-width: 750px) {
+    h2 {
+      font-size: calc(16px + 1vw);
+    }
+
+    h3 {
+      padding-top: 2%;
+      padding-bottom: 1%;
+    }
+
+    p {
+      font-size: calc(12px + 0.5vw);
+      padding-bottom: 2%;
+    }
+
+    ul {
+      font-size: calc(12px + 0.5vw);
+      padding-top: 2%;
+      padding-bottom: 3%;
+    }
+  }
 `
