@@ -24,3 +24,9 @@ dist-ssr
 *.sw?
 
 archive/
+
+# TypeScript/Vite build artifacts
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+.eslintcache
