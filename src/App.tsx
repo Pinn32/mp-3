@@ -29,7 +29,7 @@ const StyledWrapper = styled.div`
   min-height: 150vh;
   
   @media (max-width: 750px) {
-    max-width: 90vw;
+    max-width: 85vw;
     padding: 1% 3%;
   }
 `;
