@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import sampleArt1 from "../../../public/sample-art-1.png";
-import sampleArt2 from "../../../public/sample-art-2.png";
-import sampleArt3 from "../../../public/sample-art-3.png";
-import sampleMusic1 from "../../../public/sample-music-1.png";
-import sampleMusic2 from "../../../public/sample-music-2.png";
 import {StyledIntro, StyledMainContent} from "../layout/main-layout.styles";
 import styled from "styled-components";
+
+const sampleArt1 = "/sample-art-1.png";
+const sampleArt2 = "/sample-art-2.png";
+const sampleArt3 = "/sample-art-3.png";
+const sampleMusic1 = "/sample-music-1.png";
+const sampleMusic2 = "/sample-music-2.png";
 
 const StyledGallery = styled.div`
   display: flex;
@@ -95,4 +96,3 @@ export default function HobbiesPage() {
     </>
   );
 }
-

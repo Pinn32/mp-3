@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import portraitImage from "../../../public/pinn32.png";
 import { StyledIntro, StyledMainContent } from "../layout/main-layout.styles";
+
+const portraitImage = "/pinn32.png";
 
 export default function HomePage() {
   useEffect(() => {
@@ -55,4 +56,3 @@ export default function HomePage() {
     </>
   );
 }
-
