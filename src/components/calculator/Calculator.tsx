@@ -1,6 +1,6 @@
 import type { ChangeEvent } from "react";
-import useCalculator from "../../hooks/useCalculator";
-import type { Operation } from "../../hooks/useCalculator";
+import useCalculator from "./useCalculator";
+import type { Operation } from "./useCalculator";
 import styled from "styled-components";
 
 type OperationButton = {
