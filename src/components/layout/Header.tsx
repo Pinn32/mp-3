@@ -8,8 +8,9 @@ const StyledHeader = styled.header`
     color: whitesmoke;
     
     @media (max-width: 750px) {
+        font-size: calc(10px + 0.1vh);
         text-align: center;
-        padding: 4% 1%;
+        padding: 3% 1%;
     }
 `
 

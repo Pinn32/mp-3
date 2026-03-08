@@ -60,7 +60,7 @@ const StyledNav = styled.nav`
       display: block;
       text-align: center;
       padding: calc(4px + 0.1vh) 3%;
-      font-size: calc(8px + 1vw);
+      font-size: calc(10px + 0.3vw);
       box-sizing: border-box;
     }
   }

@@ -13,22 +13,9 @@ import ResearchPage from "./components/main/ResearchPage";
 import HobbiesPage from "./components/main/HobbiesPage";
 
 const GlobalStyle = createGlobalStyle`
-  @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap");
-  
   * {
     margin: 0;
     box-sizing: border-box;
-  }
-
-  html,
-  body,
-  #root {
-    min-height: 100%;
-  }
-
-  body {
-    font-family: "Zalando Sans", Arial, sans-serif;
-    color: #240807;
   }
 `
 
@@ -80,16 +67,16 @@ const StyledMain = styled.main`
 function Root() {
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle/>
       <StyledWrapper>
-        <Header />
+        <Header/>
         <StyledContainer>
-          <Navigation />
+          <Navigation/>
           <StyledMain>
-            <Outlet />
+            <Outlet/>
           </StyledMain>
         </StyledContainer>
-        <Footer />
+        <Footer/>
       </StyledWrapper>
     </>
   );
